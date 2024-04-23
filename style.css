@@ -1,0 +1,36 @@
+body {
+    background-color: #e0f7fa; /* Jasnoniebieskie tło dla całej strony */
+  }
+  
+  #gra {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  .pole {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0; /* Jasnoszare tło dla niezaznaczonych pól */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Dodaje płynne przejście koloru */
+  }
+  
+  .pole.X:hover, .pole.O:hover {
+    background-color: #cfd8dc; /* Ciemniejszy odcień szarego dla efektu najechania */
+  }
+  
+  .X {
+    color: #f44336; /* Czerwony kolor dla krzyżyka */
+  }
+  
+  .O {
+    color: #2196f3; /* Niebieski kolor dla kółka */
+  }
+  
